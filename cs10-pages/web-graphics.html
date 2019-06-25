@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="../css/courses-common.css">
+  <link rel="stylesheet" href="../css/main-content.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../images/ainlay-logo-blue.png">
+
+  <title>Web Graphics & Animation</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Main Title -->
+  <div id="main-title">
+    <!-- Header: load from header.html -->
+    <header></header>
+    <script>
+      $("header").load("../header.html");
+    </script>
+
+    <!-- Page Title -->
+    <div class="wrapper">
+      <h1>Web Graphics & Animation</h1>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="wrapper">
+    <!-- Contents -->
+    <div class="contents">
+      <a href="../cs10.html">&lt CS10 Home</a>
+      <h3>CONTENTS</h3>
+      <ul>
+        <li class="active-li">
+          <a id="web-graphics-overview" href="#">Overview</a>
+        </li>
+        <li>
+          <a id="web-graphics-basic-graphics" href="#">Basic Graphics</a>
+        </li>
+        <li>
+          <a id="web-graphics-animation-intro" href="#">Animation Intro</a>
+        </li>
+        <li>
+          <a id="web-graphics-simple-paint" href="#">Simple Paint Demo</a>
+        </li>
+        <li>
+          <a id="web-graphics-summary" href="#">Summary</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reference Content -->
+    <div class="main-content">
+      <div class="content">
+        <h2>Overview</h2>
+        <hr>
+
+        <h3>Big Idea</h3>
+        <p>The Big Idea of <em>"Web Graphics & Animation"</em> is to learn the basics of drawing and animation on an
+          html
+          canvas element.</p>
+      </div>
+
+      <div class="cnvContainer">
+        <canvas id="myCanvas" style="width: 100%; border: 1px solid grey; background-color: #EEF;"></canvas>
+        <p style="text-align: center; font-style: italic; font-size: 12px; margin-top: 0;">Click on canvas to position
+          circle.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Scroll Arrow -->
+  <div class="scroll-arrow">&uarr;</div>
+  <!-- <img src="images/scroll-arrow.png" alt="scroll-arrow" class="scroll-arrow"> -->
+
+
+  <!-- Load External JavaScript -->
+  <script src="js/main-content.js"></script>
+  <script src="js/web-graphics-overview.js"></script>
+
+</body>
+
+</html>

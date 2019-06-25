@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/css/courses-common.css">
+  <link rel="stylesheet" href="/css/concept-ref.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../images/ainlay-logo-blue.png">
+
+  <title>Web Pages Concept Ref</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Main Title -->
+  <div id="main-title">
+    <!-- Header: load from header.html -->
+    <header></header>
+    <script>
+      $("header").load("../header.html");
+    </script>
+
+    <!-- Page Title -->
+    <div class="wrapper">
+      <h1>Web Pages - Concept Reference</h1>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="wrapper">
+    <!-- Contents -->
+    <div class="contents">
+      <a class="return-link" href="../cs10.html">&lt CS10 Home</a>
+      <h3>CONTENTS</h3>
+      <ul>
+        <li class="active-li">
+          <a id="how-web-works" href="#">How the Web Works</a>
+        </li>
+        <hr>
+        <li>
+          <a id="html-basics" href="#">HTML Basics</a>
+        </li>
+        <li>
+          <a id="html-images" href="#">HTML Images</a>
+        </li>
+        <li>
+          <a id="html-links" href="#">HTML Links</a>
+        </li>
+        <li>
+          <a id="html-lists" href="#">HTML Lists</a>
+        </li>
+        <li>
+          <a id="html-containers" href="#">HTML Containers</a>
+        </li>
+        <hr>
+        <li>
+          <a id="css-how-to" href="#">CSS How To</a>
+        </li>
+        <li>
+          <a id="css-style-text" href="#">CSS Style Text</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reference Content -->
+    <div class="ref-content"></div>
+    <script>
+      $(".ref-content").load("ref-pages/how-web-works.html");
+    </script>
+  </main>
+
+  <!-- Scroll Arrow -->
+  <div class="scroll-arrow">&uarr;</div>
+  <!-- <img src="images/scroll-arrow.png" alt="scroll-arrow" class="scroll-arrow"> -->
+
+  <!-- Footer: Load footer from foot.html -->
+  <footer></footer>
+  <script>
+    $("footer").load("../footer.html", function () {
+      let year = new Date().getFullYear();
+      $("#year").html(year);
+    });
+  </script>
+
+  <!-- Load External JavaScript -->
+  <script src="js/web-page-ref.js"></script>
+</body>
+
+</html>

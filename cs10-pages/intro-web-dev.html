@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="../css/courses-common.css">
+  <link rel="stylesheet" href="../css/main-content.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../images/ainlay-logo-blue.png">
+
+  <title>Intro to Web Dev</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Main Title -->
+  <div id="main-title">
+    <!-- Header: load from header.html -->
+    <header></header>
+    <script>
+      $("header").load("../header.html");
+    </script>
+
+    <!-- Page Title -->
+    <div class="wrapper">
+      <h1>Introduction to Web Development</h1>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="wrapper">
+    <!-- Contents -->
+    <div class="contents">
+      <a href="../cs10.html">&lt CS10 Home</a>
+      <h3>CONTENTS</h3>
+      <ul>
+        <li class="active-li">
+          <a id="web-dev-overview" href="#">Overview</a>
+        </li>
+        <li>
+          <a id="web-dev-video-lessons" href="#">Video Lessons</a>
+        </li>
+        <li>
+          <a id="web-dev-practice-assignments" href="#">Practice Assignments</a>
+        </li>
+        <li>
+          <a id="web-dev-summary" href="#">Summary</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reference Content -->
+    <div class="main-content"><div class="content"></div></div>
+    <script>
+      $(".content").load("cs10-content-pages/web-dev-overview.html");
+    </script>
+  </main>
+
+  <!-- Scroll Arrow -->
+  <div class="scroll-arrow">&uarr;</div>
+  <!-- <img src="images/scroll-arrow.png" alt="scroll-arrow" class="scroll-arrow"> -->
+
+
+  <!-- Load External JavaScript -->
+  <script src="js/main-content.js"></script>
+</body>
+
+</html>
