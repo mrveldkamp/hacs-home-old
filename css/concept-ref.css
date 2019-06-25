@@ -1,0 +1,130 @@
+/* Main Title */
+
+#main-title h1 {
+  font-size: 2.5em;
+}
+
+/* Main */
+
+main.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Contents Menu */
+
+.contents {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 5px;
+}
+
+.contents a.return-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding-top: 20px;
+}
+
+.contents h3 {
+  color: #777;
+}
+
+.contents ul {
+  list-style-type: none;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.contents a {
+  text-decoration: none;
+  color: #333;
+  line-height: 1.75rem;
+}
+
+.contents a:hover {
+  text-decoration: underline;
+}
+
+.contents hr {
+  width: 150px;
+  margin: 2px 0;
+}
+
+.active-li {
+  list-style-image: url("../../images/orange-border.png");
+}
+
+/* Reference Content */
+
+.ref-content h2 {
+  color: #09457e;
+}
+
+.ref-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+  color: #7e6e09;
+}
+
+.combo-box {
+  display: flex;
+}
+
+.combo-box div:first-child {
+  margin-right: 20px;
+}
+
+.ref-content h4:first-child,
+.ref-content p:first-child {
+  margin-top: 0;
+}
+
+.ref-content h4 {
+  margin-bottom: 5px;
+}
+
+.ref-content .code-img {
+  border-left: 2px solid #296298;
+}
+
+.heading-example h1,
+.heading-example h2,
+.heading-example h3,
+.heading-example h4,
+.heading-example h5,
+.heading-example h6 {
+  color: #000;
+  margin: 5px 0;
+}
+
+.ref-content a {
+  color: #09457e;
+  text-decoration: none;
+}
+
+.ref-content a:hover {
+  text-decoration: underline;
+}
+
+.ref-content .example {
+  font-style: italic;
+}
+
+/* Scroll Arrow */
+
+.scroll-arrow {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 25px;
+  line-height: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  padding-bottom: 2px;
+  color: white;
+  background-color: #296298;
+  border-radius: 5px;
+}

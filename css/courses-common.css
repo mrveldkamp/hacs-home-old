@@ -1,0 +1,76 @@
+/* Styles for all course pages */
+
+/* Reset & Presets */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/Harry-Ainlay_background-1600x700.png") no-repeat right fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+
+header {
+  padding: 15px 0;
+  border-bottom: 1px solid #CCC;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  vertical-align: text-bottom;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #FB9C1B;
+}
+
+nav a.active {
+  color: #FB9C1B;
+}
+
+/* Main Title */
+
+#main-title {
+  padding-bottom: 5px;
+}
+
+#main-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 2px;
+  margin: 0.67em 0;
+}
+
+#main-title p {
+  color: white;
+}

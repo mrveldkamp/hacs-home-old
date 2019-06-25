@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="images/ainlay-logo-blue.png">
+
+  <link rel="stylesheet" href="css/courses-common.css">
+
+  <link rel="stylesheet" href="css/cs10.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  <title>CS10 Home</title>
+
+</head>
+
+
+
+<body>
+
+  <!-- Main Title -->
+
+  <div id="main-title">
+
+    <!-- Header: load from header.html -->
+
+    <header></header>
+
+    <script>
+      $("header").load("header.html", function () {
+
+        $("header a[href='/cs10.html']").addClass("active");
+
+      });
+    </script>
+
+
+
+    <!-- Page Title -->
+
+    <div class="wrapper">
+
+      <h1>Computing Science 10</h1>
+
+      <p>Learn to create web pages, apps, games and animations with HTML, CSS and JavaScript.</p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Web Dev Courses Section -->
+
+  <section class="web-dev">
+
+    <div class="wrapper">
+
+
+
+      <div class="card-container">
+
+
+
+        <div class="card">
+
+          <img src="images/create-webpage-image.png">
+
+          <div class="card-text">
+
+            <h3>1. Intro to Web Development</h3>
+
+            <p>Use HTML and CSS to create web pages from a given design.</p>
+
+            <a href="cs10-pages/intro-web-dev.html">Get Started...</a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <img src="images/jsLogo-small.png">
+
+          <div class="card-text">
+
+            <h3>2. Intro to Programming</h3>
+
+            <p>Learn the basics of programming web apps with JavaScript.</p>
+
+            <a href="cs10-pages/intro-to-programming.html">Get Started...</a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <img src="images/web-games-small.png">
+
+          <div class="card-text">
+
+            <h3>3. Web Graphics & Animation</h3>
+
+            <p>Use JavaScript to make drawings and animations on an html canvas.</p>
+
+            <a href="cs10-pages/web-graphics.html">Get Started...</a>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <img src="images/tool-icon.png">
+
+          <div class="card-text">
+
+            <h3>Project: Apply & Extend</h3>
+
+            <p>Explore additional topics and create your own programs.</p>
+
+            <a href="cs10-pages/cs10project-apply.html">Get Started...</a>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer: Load footer from foot.html -->
+
+  <!-- <footer></footer>
+
+  <script>
+
+    $("footer").load("footer.html", function () {
+
+      let year = new Date().getFullYear();
+
+      $("#year").html(year);
+
+    });
+
+  </script> -->
+
+
+
+</body>
+
+
+
+</html>

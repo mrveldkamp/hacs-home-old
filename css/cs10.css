@@ -1,0 +1,53 @@
+
+/* Page Style */
+
+/* Course Section */
+
+.web-dev {
+  margin-top: 40px;
+}
+
+h3 {
+  color: #09457e;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 4em;
+  grid-row-gap: 3em;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #FB9C1B;
+  border-radius: 15px;
+  box-shadow: 2px 2px #FB9C1B;
+  padding: 25px 50px 50px 50px;
+  background-color: white;
+}
+
+.card>img {
+  margin-right: 30px;
+  align-self: center;
+  width: 150px;
+}
+
+.card a {
+  display: block;
+  background-color: #FB9C1B;
+  color: white;
+  text-decoration: none;
+  line-height: 1.5em;
+  border: 2px solid #FB9C1B;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 5px 0;
+  width: 70%;
+}
+
+.card a:hover {
+  background-color: white;
+  color: #FB9C1B;
+}

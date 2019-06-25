@@ -1,0 +1,126 @@
+/* Main Title */
+
+#main-title h1 {
+  font-size: 2.5em;
+}
+
+/* Main */
+
+main.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Contents Menu */
+
+.contents {
+  flex: 0 0 200px;
+  position: sticky;
+  top: 5px;
+  padding-top: 20px;
+}
+
+.contents h3 {
+  color: #FB9C1B;
+}
+
+.contents ul {
+  list-style-type: none;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.contents a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.75rem;
+}
+
+.contents a:hover {
+  text-decoration: underline;
+}
+
+.contents hr {
+  width: 150px;
+  margin: 2px 0;
+}
+
+.active-li {
+  list-style-image: url("../images/orange-border.png");
+}
+
+/* Reference Content */
+.main-content {
+  background-color: white;
+  padding: 15px 75px;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+.main-content h2 {
+  color: #09457e;
+}
+
+.main-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+  color: #7e6e09;
+}
+
+.combo-box {
+  display: flex;
+}
+
+.combo-box div:first-child {
+  margin-right: 20px;
+}
+
+.main-content h4:first-child,
+.main-content p:first-child {
+  margin-top: 0;
+}
+
+.main-content h4 {
+  margin-bottom: 5px;
+}
+
+.main-content .code-img {
+  border-left: 2px solid #296298;
+}
+
+.heading-example h1,
+.heading-example h2,
+.heading-example h3,
+.heading-example h4,
+.heading-example h5,
+.heading-example h6 {
+  color: #000;
+  margin: 5px 0;
+}
+
+.main-content a {
+  color: #09457e;
+  font-weight: bold;
+}
+
+.main-content .example {
+  font-style: italic;
+}
+
+/* Scroll Arrow */
+
+.scroll-arrow {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 25px;
+  line-height: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  padding-bottom: 2px;
+  color: white;
+  background-color: #296298;
+  border-radius: 5px;
+}
